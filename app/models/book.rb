@@ -1,6 +1,9 @@
 class Book < ActiveRecord::Base
 
 
+validates :title, presence: true
+
+
  scope :search, ->(keyword){ where('keywords LIKE ?', "%#{keyword.downcase}%") if keyword.present? }
 
 

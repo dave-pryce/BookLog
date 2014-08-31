@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<div class="alert alert-success"><%= notice %></div>
 
 <p>
   <strong>Title:</strong>
@@ -15,5 +15,8 @@
   <%= @book.descritpion %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+
+<div class="button group">
+<%= link_to 'Edit', edit_book_path(@book), :class =>"btn btn-default" %>
+<%= link_to 'Back', books_path, :class => "btn btn-default" %>
+</div>
