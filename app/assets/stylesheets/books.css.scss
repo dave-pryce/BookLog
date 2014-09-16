@@ -10,7 +10,13 @@ padding: 1% 1% 1% 1% ;
 }
 
 
-td 
+table
 {
 	width: 50%;
+	column-width: 30px;
 } 
+
+#field
+{
+	width: 100px;
+}

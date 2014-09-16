@@ -14,3 +14,9 @@
  *= require bootstrap
  *= require_self
  */
+
+
+.form-control
+{
+	width: 80%;
+}

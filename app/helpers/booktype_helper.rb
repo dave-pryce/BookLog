@@ -1,0 +1,2 @@
+module BooktypeHelper
+end

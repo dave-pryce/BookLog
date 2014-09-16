@@ -1,4 +1,11 @@
+
+<% if notice %>
 <div class="alert alert-success"><%= notice %></div>
+<% end %>
+
+  <div class="jumbotron">
+    <h2>Book Details</h2>
+  </div>
 
 <p>
   <strong>Title:</strong>
@@ -12,11 +19,21 @@
 
 <p>
   <strong>Descritpion:</strong>
-  <%= @book.descritpion %>
+  <%= @book.description %>
 </p>
 
+<p>
+<strong>Type:</strong>
+<%= @book.type.btype %>
+</p>
 
 <div class="button group">
 <%= link_to 'Edit', edit_book_path(@book), :class =>"btn btn-default" %>
 <%= link_to 'Back', books_path, :class => "btn btn-default" %>
 </div>
+
+
+
+
+
+

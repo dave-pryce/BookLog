@@ -11,15 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140827040159) do
+ActiveRecord::Schema.define(version: 20140915220955) do
 
   create_table "books", force: true do |t|
     t.text     "title"
     t.text     "author"
-    t.text     "descritpion"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "keywords"
+    t.integer  "type_id"
   end
+
+  add_index "books", ["type_id"], name: "index_books_on_type_id"
+
+  create_table "types", force: true do |t|
+    t.string   "btype"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
 end

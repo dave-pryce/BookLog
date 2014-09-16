@@ -23,12 +23,21 @@
     <%= f.text_area :author %>
   </div>
   <div class="field">
-    <%= f.label :descritpion %><br>
-    <%= f.text_area :descritpion %>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
   </div>
+
+
+<%= f.collection_select :type_id, Type.all, :id, :btype, {prompt: "Select a category"}, {class: "form-control"} %>
+
+
+<br>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+
+<br>
 
 
 </form>
