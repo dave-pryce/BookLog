@@ -28403,3 +28403,411 @@ Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-10-20 21:02:02 +1100
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-20 21:02:02 +1100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.7ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 186ms (Views: 180.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:33:50 +1100
+
+
+Started GET "/?keyword=dan" for 127.0.0.1 at 2014-11-24 19:34:00 +1100
+Processing by BooksController#index as HTML
+  Parameters: {"keyword"=>"dan"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books"  WHERE (keywords LIKE '%dan%')[0m
+  Rendered books/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books/23" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT  "types".* FROM "types"  WHERE "types"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/23" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT  "types".* FROM "types"  WHERE "types"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:09 +1100
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:34:11 +1100
+
+
+Started GET "/books/23" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT  "types".* FROM "types"  WHERE "types"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/23" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT  "types".* FROM "types"  WHERE "types"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered books/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:38 +1100
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:40 +1100
+
+
+Started GET "/books/23/edit" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT "types".* FROM "types"[0m
+  Rendered books/_form.html.erb (19.2ms)
+  Rendered books/edit.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/23/edit" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mType Load (0.1ms)[0m  [1mSELECT "types".* FROM "types"[0m
+  Rendered books/_form.html.erb (3.0ms)
+  Rendered books/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:42 +1100
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/type.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/booktype.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/booktype.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/type.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 19:39:58 +1100
